@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo.png">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+<body>
+
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#hero">Sobre</a></li>
+                <li><a href="#produtos">Compre conosco</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Bem-vindo</h2>
+            <img src="./img/logo.png" alt="Logo da empresa">
+            <p>A EcoTech desenvolve soluções tecnológicas voltadas à sustentabilidade e redução de impactos ambientais.
+                A empresa atua com dispositivos inteligentes, monitoramento ambiental e gestão de energia.
+                Seus sistemas utilizam inteligência artificial para otimizar o consumo e evitar desperdícios.
+                Também investe em pesquisa, inovação e no uso de energias renováveis.
+                Além disso, promove educação ambiental e parcerias para incentivar práticas ecológicas.</p>
+        </section>
+        <section class="cards" id="produtos">
+            <div class="card1">
+                <div>
+                    <img src="./img/Card1.png" alt="Card 1">
+                </div>
+                <h1>Gestão Inteligente de Energia</h1>
+                <p>Sistemas que monitoram e otimizam o consumo de energia em empresas e residências, reduzindo custos e
+                    desperdícios.</p>
+            </div>
+            <div class="card2">
+                <div>
+                    <img src="./img/card2.png" alt="Card 2">
+                </div>
+                <h1>Monitoramento Ambiental em Tempo Real</h1>
+                <p>Plataformas com sensores que analisam qualidade do ar, água e solo, fornecendo dados precisos para
+                    tomada de decisões.</p>
+            </div>
+            <div class="card3">
+                <div>
+                    <img src="./img/Card3.png" alt="Card 3">
+                </div>
+                <h1>Consultoria em Sustentabilidade</h1>
+                <p>Assessoria para empresas adotarem práticas ecológicas, reduzirem a pegada de carbono e atenderem
+                    normas ambientais.</p>
+            </div>
+            <div class="card4">
+                <div>
+                    <img src="./img/card4.png" alt="Card 4">
+                </div>
+                <h1>Automação Sustentável</h1>
+                <p>Desenvolvimento de soluções automatizadas que integram dispositivos inteligentes para tornar
+                    processos mais eficientes e ecológicos.</p>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                <label for="telefone" id="telefone">Telefone:</label>
+                <input type="number" id="telefone" placeholder="(11) 99999-9999" pattern="\(\d{2}\)\s\d{4,5}-\d{4}" >
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="user@email.com" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem aqui..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+        </section>
+        <script> console.log("Olá, o script está rodando!");</script>
+
+        <button onclick="testarPrompt()">Clique para dar seu nome</button>
+
+        <script>
+            function testarPrompt() {
+                let nome = prompt("Qual é o seu nome?");
+                if (nome) {
+                    alert("Olá, " + nome + "!");
+                }
+            }
+        </script>
+    </main>
+    <footer>
+        <p>&copy; 2026 - Empresa EcoTech
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

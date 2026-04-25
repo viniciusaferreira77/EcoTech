@@ -1,0 +1,12 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial; }
+header { background: #333; color: white; padding: 20px; text-align: center; }
+nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; }
+nav a { color: white; text-decoration: none; }
+main { padding: 20px; }
+.cards { display: flex; gap: 20px; flex-wrap: wrap; }
+/* .card1{
+} */
+#contato { max-width: 500px; margin: 0 auto; }
+input, button { width: 100%; padding: 8px; margin-top: 5px; }
+button { background: #e67e22; color: white; border: none; cursor: pointer; }
